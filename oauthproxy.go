@@ -204,7 +204,6 @@ func NewOAuthProxy(opts *Options, validator func(string) bool) *OAuthProxy {
 		SkipProviderButton: opts.SkipProviderButton,
 		CookieCipher:       cipher,
 		templates:          loadTemplates(opts.CustomTemplatesDir),
-		SkipProviderButton: opts.SkipProviderButton,
 		Footer:             opts.Footer,
 	}
 }
