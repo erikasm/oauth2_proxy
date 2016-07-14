@@ -122,3 +122,7 @@ func (p *ProviderData) ValidateSessionState(s *SessionState) bool {
 func (p *ProviderData) RefreshSessionIfNeeded(s *SessionState) (bool, error) {
 	return false, nil
 }
+
+func (p *ProviderData) GetUserId(s *SessionState) (string, error) {
+	return "", nil
+}
